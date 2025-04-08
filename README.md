@@ -1,26 +1,55 @@
 # ZoloSim Engine Core
 
-Modular engine and drivetrain simulation system for Unity.  
-Designed to be embedded into larger Unity vehicle simulation projects.
+**ZoloSim Engine Core** is a modular engine and drivetrain simulation system for Unity.  
+It simulates combustion cycles, torque generation, and drivetrain layout in a flexible and extendable way.
 
-## Features
-- Component-based architecture (Vehicle, Part)
-- Core engine behavior simulation
-- Expandable via plugin system (e.g., EngineSound)
+This is the core logic only – it **does not** include wheel physics or suspension simulation.  
+For full vehicle simulation, you must install **Wheel Controller 3D** by NWH Coding.
 
-## Structure
-- `Vehicle.cs`: Main vehicle logic
-- `Part.cs`: Base component module
-- `enums/`: Definitions for drivetrain layout, crankshaft position, etc.
-- `plugins/`: Optional plugins (e.g., sound simulation)
-- `interfaces/`, `data/`, `parts/`: Internal logic and organization
+---
 
-## Usage
-Place the the root folder of this project inside your Unity project.  
-Import namespaces (e.g., `using ZoloSim.EngineCore;`) to access core functionality.
+## 🔧 Features
+- 🔌 Plug-and-play component architecture (`Part`, `Vehicle`)
+- 🔥 Engine cycle simulation with RPM and ignition logic
+- ⚙️ Differential, clutch, and crankshaft behavior
+- 🔊 Sound plugin example (`EngineSound`)
+- 🧩 Extendable via your own modules
 
-## Requirements
-- Unity (recommended version: 2021.3 or newer)
+---
 
-## License
-MIT License – see [LICENSE](./LICENSE) for full details.
+## 📦 Requirements
+- Unity **2021.3 LTS** or newer
+- [**Wheel Controller 3D** – Unity Asset Store](https://assetstore.unity.com/packages/tools/physics/wheel-controller-3d-74512)  
+  > Developed by [NWH Coding](https://www.nwhvehiclephysics.com/doku.php/NWH/WheelController3D/index)  
+  Required for suspension, traction and full vehicle dynamics.
+
+---
+
+## 🗂 Project Structure
+
+EngineCore/
+├── base/          # Base classes for all parts
+├── parts/         # Core mechanical parts (Engine, Clutch, etc.)
+├── data/          # Serializable data containers
+├── plugins/       # Optional plugins (e.g., sound simulation)
+├── enums/         # Drivetrain configuration constants
+├── README.md      # This file
+├── .gitignore     # Unity-specific ignore rules
+└── LICENSE        # MIT license
+
+---
+
+## 🚀 Getting Started
+
+1. Clone or copy the `EngineCore/` folder into your Unity project.
+2. Import **[Wheel Controller 3D](https://assetstore.unity.com/packages/tools/physics/wheel-controller-3d-74512)** from the Unity Asset Store.
+3. Add a `Vehicle` component to your vehicle object and hook it up to your custom controller.
+4. Extend the engine behavior or use the included plugin examples.
+
+---
+
+## 🧑‍💻 Author
+
+**Zolo**  
+[GitHub](https://github.com/zolo86)  
+© 2025 — Released under the MIT License.
