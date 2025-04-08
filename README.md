@@ -12,7 +12,7 @@ For full vehicle simulation, you must install **Wheel Controller 3D** by NWH Cod
 - 🔌 Plug-and-play component architecture (`Part`, `Vehicle`)
 - 🔥 Engine cycle simulation with RPM and ignition logic
 - ⚙️ Differential, clutch, and crankshaft behavior
-- 🔊 Sound plugin example (`EngineSound`)
+- 🔊 Sound plugin example (`EngineSound`) with **Chunity** support
 - 🧩 Extendable via your own modules
 
 ---
@@ -22,6 +22,8 @@ For full vehicle simulation, you must install **Wheel Controller 3D** by NWH Cod
 - [**Wheel Controller 3D** – Unity Asset Store](https://assetstore.unity.com/packages/tools/physics/wheel-controller-3d-74512)  
   > Developed by [NWH Coding](https://www.nwhvehiclephysics.com/doku.php/NWH/WheelController3D/index)  
   Required for suspension, traction and full vehicle dynamics.
+- [**Chunity (ChucK for Unity)**](https://github.com/ccrma/chunity) (optional)  
+  Used for audio synthesis in the included `EngineSound` plugin.
 
 ---
 
@@ -43,8 +45,9 @@ EngineCore/
 
 1. Clone or copy the `EngineCore/` folder into your Unity project.
 2. Import **[Wheel Controller 3D](https://assetstore.unity.com/packages/tools/physics/wheel-controller-3d-74512)** from the Unity Asset Store.
-3. Add a `Vehicle` component to your vehicle object and hook it up to your custom controller.
-4. Extend the engine behavior or use the included plugin examples.
+3. (Optional) Install Chunity to enable audio synthesis via the EngineSound plugin.
+4. Add a `Vehicle` component to your vehicle object and hook it up to your custom controller.
+5. Extend the engine behavior or use the included plugin examples.
 
 ---
 
