@@ -28,7 +28,7 @@ For full vehicle simulation, you must install **Wheel Controller 3D** by NWH Cod
 ---
 
 ## 🗂 Project Structure
-
+```text
 EngineCore/
 ├── base/          # Base classes for all parts
 ├── parts/         # Core mechanical parts (Engine, Clutch, etc.)
@@ -38,6 +38,7 @@ EngineCore/
 ├── README.md      # This file
 ├── .gitignore     # Unity-specific ignore rules
 └── LICENSE        # MIT license
+```
 
 ---
 
