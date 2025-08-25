@@ -1,6 +1,6 @@
-# ZoloSim Engine Core
+# Engine Core
 
-**ZoloSim Engine Core** is a modular engine and drivetrain simulation system for Unity.  
+This project is a modular engine and drivetrain simulation system for Unity.  
 It simulates combustion cycles, torque generation, and drivetrain layout in a flexible and extendable way.
 
 This is the core logic only – it **does not** include wheel physics or suspension simulation.  
